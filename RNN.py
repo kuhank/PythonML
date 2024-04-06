@@ -30,6 +30,5 @@ model.compile(optimizer='adam', loss='mse')
 # Train the model
 model.fit(X_train, y_train, epochs=10, batch_size=32, validation_split=0.2)
 
-# Evaluate the model
 loss = model.evaluate(X_test, y_test)
 print("Test Loss:", loss)
